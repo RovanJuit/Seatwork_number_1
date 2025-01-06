@@ -8,7 +8,7 @@ export default function App() {
     { id: 4, name: "Tom" },
     { id: 5, name: "Cha" },
   ]);
-  const [user, setUser] = useState({ id: null, name: "" });
+  const [user, setUser] = useState({});
 
   // Delete User
   const deleteFxn = (_id) => setUsers(users.filter(({ id }) => id !== _id));
