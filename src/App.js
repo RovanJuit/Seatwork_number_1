@@ -27,8 +27,7 @@ export default function App() {
 
       // Create New User
       const newUser = { ..._user, id: users.length ? Math.max(...users.map(u => u.id)) + 1 : 1 };
-      
-      console.log(newUser)
+    
       setUsers([...users, newUser]);
 
     } else {
